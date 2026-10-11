@@ -1,0 +1,68 @@
+const students = [
+  {
+    id: 1,
+    name: "Arjun Mehta",
+    rollNo: "101",
+    studentId: "STU001",
+    course: "Computer Science",
+    image: "https://randomuser.me/api/portraits/men/32.jpg",
+  },
+  {
+    id: 2,
+    name: "Priya Sharma",
+    rollNo: "102",
+    studentId: "STU002",
+    course: "Information Technology",
+    image: "https://randomuser.me/api/portraits/women/44.jpg",
+  },
+  {
+    id: 3,
+    name: "Rahul Verma",
+    rollNo: "103",
+    studentId: "STU003",
+    course: "Artificial Intelligence",
+    image: "https://randomuser.me/api/portraits/men/75.jpg",
+  },
+  {
+    id: 4,
+    name: "Neha Singh",
+    rollNo: "104",
+    studentId: "STU004",
+    course: "Data Science",
+    image: "https://randomuser.me/api/portraits/women/68.jpg",
+  },
+  {
+    id: 5,
+    name: "Karan Patel",
+    rollNo: "105",
+    studentId: "STU005",
+    course: "Mechanical Engineering",
+    image: "https://randomuser.me/api/portraits/men/46.jpg",
+  },
+  {
+    id: 6,
+    name: "Sneha Iyer",
+    rollNo: "106",
+    studentId: "STU006",
+    course: "Electronics & Communication",
+    image: "https://randomuser.me/api/portraits/women/65.jpg",
+  },
+  {
+    id: 7,
+    name: "Priya Sharma",
+    rollNo: "107",
+    studentId: "STU007",
+    course: "Information Technology",
+    image: "https://randomuser.me/api/portraits/women/44.jpg",
+  },
+  {
+    id: 8,
+    name: "Rahul Verma",
+    rollNo: "108",
+    studentId: "STU008",
+    course: "Artificial Intelligence",
+    image: "https://randomuser.me/api/portraits/men/75.jpg",
+  },
+];
+
+export default students;
