@@ -5,9 +5,9 @@ const FavoritesContext = createContext();
 export function FavoritesProvider({ children }) {
   const [favorites, setFavorites] = useState([]);
 
-  function toggleFavorite(studentId) {
+  function toggleFavorite(studentId, isFavorite) {
     setFavorites((prevFavorites) =>
-      prevFavorites.includes(studentId)
+      isFavorite
         ? prevFavorites.filter((id) => id !== studentId)
         : [...prevFavorites, studentId],
     );

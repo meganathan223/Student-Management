@@ -9,11 +9,12 @@ function StudentCard({ student }) {
   const isFavoritesPage = location.pathname === "/favorites";
 
   function handleFavoriteClick() {
-    if (isFavoritesPage) {
-      toggleFavorite(student.id);
-    } else if (!favorite) {
-      toggleFavorite(student.id);
-    }
+    // if (isFavoritesPage) {
+    //   toggleFavorite(student.id);
+    // } else if (!favorite) {
+    //   toggleFavorite(student.id);
+    // }
+    toggleFavorite(student.id, favorite);
   }
 
   return (
@@ -48,10 +49,10 @@ function StudentCard({ student }) {
           aria-label={
             favorite ? "Student is a favorite" : "Add student to favorites"
           }
-          className={`text-xl transition cursor-pointer hover:scale-[1.5] ${
+          className={`text-xl transition  hover:scale-[1.5] ${
             favorite
               ? "cursor-default text-red-500"
-              : "text-gray-400 hover:scale-110 hover:text-red-500"
+              : "text-gray-400 hover:scale-110 hover:text-red-500 cursor-pointer"
           }`}
         >
           {favorite ? "❤️" : "♡"}
@@ -62,12 +63,12 @@ function StudentCard({ student }) {
       <button
         onClick={handleFavoriteClick}
         disabled={!isFavoritesPage && favorite}
-        className={`mt-2 w-full rounded-lg px-2 py-2 cursor-pointer text-xs font-medium transition ${
+        className={`mt-2 w-full rounded-lg px-2 py-2  text-xs font-medium transition ${
           isFavoritesPage
             ? "bg-red-500 text-white hover:bg-red-600"
             : favorite
               ? "cursor-not-allowed bg-green-100 text-green-700"
-              : "bg-indigo-600 text-white hover:bg-indigo-700"
+              : "bg-indigo-600 text-white hover:bg-indigo-700 cursor-pointer"
         }`}
       >
         {isFavoritesPage
